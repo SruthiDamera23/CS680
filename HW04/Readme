@@ -7,6 +7,8 @@ State Transitions:
 
 1. From Off, we can:
     Increase speed to Low 
+    Decrease speed to Off
+    Turn off to Off
 2. From Low, we can:
     Increase speed to Medium
     Decrease speed to Off
