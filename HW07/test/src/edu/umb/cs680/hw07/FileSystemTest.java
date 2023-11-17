@@ -23,7 +23,7 @@ class FileSystemTest {
     	Directory r=new Directory(null,"abc",1,LocalDateTime.now());
     	FileSystem fs=FileSystem.getFileSystem();
     	fs.appendRootDir(r);
-    	assertEquals(r,fs.getRootDirs().get(1));
+    	assertEquals(r,fs.getRootDirs().get(0));
     }
     
     
