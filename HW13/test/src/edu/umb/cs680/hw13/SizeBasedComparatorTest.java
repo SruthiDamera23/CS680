@@ -28,17 +28,6 @@ class SizeBasedComparatorTest {
 		
 	}
 	
-	
-	public LinkedList<String> getElementNames(LinkedList<FSElement> c) {
-		LinkedList<String> carNames = new LinkedList<>();
-
-        for (FSElement car : c) {
-            carNames.add( car.getName());
-        }
-
-        return carNames;
-	}
-
 	@Test
     void GetChildrenTest() {
 		SizeBasedComparator comparator = new SizeBasedComparator();
