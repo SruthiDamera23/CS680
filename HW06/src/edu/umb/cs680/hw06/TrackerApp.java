@@ -10,7 +10,6 @@ public class TrackerApp implements LocationObserver<Location>,StepCountObserver<
 	@Override
 	public void updateStepCount(StepCounter<StepCount> sender, StepCount event) {
 		
-		StepCount sce = (StepCount) event;
 		System.out.println("Step Count updated");
 		System.out.println("Step Count:"+event.getCount());
 		StepsCount=event.getCount();
@@ -19,7 +18,6 @@ public class TrackerApp implements LocationObserver<Location>,StepCountObserver<
 
 	@Override
 	public void updateLocation(LocationSensor<Location> sender, Location event) {
-		Location le = (Location) event;
 		System.out.println("Location updated");
 		System.out.println("Location:"+event.getCurrentLocation());
 		CurrentLocation=event.getCurrentLocation();

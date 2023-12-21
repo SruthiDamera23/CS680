@@ -12,7 +12,7 @@ class LocationSensorTest {
 
 	@Test
 	public void addObserverTest() {
-		LocationSensor lso=new LocationSensor("41°24'12.2\"N 2°10'26.5\"E");
+		LocationSensor<Location> lso=new LocationSensor<Location>("41°24'12.2\"N 2°10'26.5\"E");
 		TrackerApp ob1=new TrackerApp();
 		lso.addObserver(ob1);
 		assertEquals(lso.countObservers(),1);
@@ -20,7 +20,7 @@ class LocationSensorTest {
 	
 	@Test
 	public void removeObserverTest() {
-		LocationSensor lso=new LocationSensor("41°24'12.2\"N 2°10'26.5\"E");
+		LocationSensor<Location> lso=new LocationSensor<Location>("41°24'12.2\"N 2°10'26.5\"E");
 		TrackerApp ob1=new TrackerApp();
 		lso.addObserver(ob1);
 		assertEquals(lso.countObservers(),1);
@@ -30,7 +30,7 @@ class LocationSensorTest {
 	
 	@Test
 	public void clearObserversTest() {
-		LocationSensor lso=new LocationSensor("41°24'12.2\"N 2°10'26.5\"E");
+		LocationSensor<Location> lso=new LocationSensor<Location>("41°24'12.2\"N 2°10'26.5\"E");
 		TrackerApp ob1=new TrackerApp();
 		TrackerApp ob2=new TrackerApp();
 		lso.addObserver(ob1);
@@ -42,7 +42,7 @@ class LocationSensorTest {
 	
 	@Test
 	public void getObserversTest() {
-		LocationSensor lso=new LocationSensor("41°24'12.2\"N 2°10'26.5\"E");
+		LocationSensor<Location> lso=new LocationSensor<Location>("41°24'12.2\"N 2°10'26.5\"E");
 		TrackerApp ob1=new TrackerApp();
 		TrackerApp ob2=new TrackerApp();
 		lso.addObserver(ob1);
@@ -57,7 +57,7 @@ class LocationSensorTest {
 	
 	@Test
 	public void notifyObserversTest() {
-		LocationSensor lso=new LocationSensor("41°24'12.2\"N 2°10'26.5\"E");
+		LocationSensor<Location> lso=new LocationSensor<Location>("41°24'12.2\"N 2°10'26.5\"E");
 		TrackerApp ob1=new TrackerApp();
 		TrackerApp ob2=new TrackerApp();
 		lso.addObserver(ob1);

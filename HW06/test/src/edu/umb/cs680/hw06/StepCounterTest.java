@@ -10,7 +10,7 @@ class StepCounterTest {
 
 	@Test
 	public void addObserverTest() {
-		StepCounter sco=new StepCounter(2);
+		StepCounter<StepCount> sco=new StepCounter<StepCount>(2);
 		TrackerApp ob1=new TrackerApp();
 		sco.addObserver(ob1);
 		assertEquals(sco.countObservers(),1);
@@ -18,7 +18,7 @@ class StepCounterTest {
 	
 	@Test
 	public void removeObserverTest() {
-		StepCounter sco=new StepCounter(2);
+		StepCounter<StepCount> sco=new StepCounter<StepCount>(2);
 		TrackerApp ob1=new TrackerApp();
 		sco.addObserver(ob1);
 		assertEquals(sco.countObservers(),1);
@@ -28,7 +28,7 @@ class StepCounterTest {
 	
 	@Test
 	public void clearObserversTest() {
-		StepCounter sco=new StepCounter(2);
+		StepCounter<StepCount> sco=new StepCounter<StepCount>(2);
 		TrackerApp ob1=new TrackerApp();
 		TrackerApp ob2=new TrackerApp();
 		sco.addObserver(ob1);
@@ -40,7 +40,7 @@ class StepCounterTest {
 	
 	@Test
 	public void getObserversTest() {
-		StepCounter sco=new StepCounter(2);
+		StepCounter<StepCount> sco=new StepCounter<StepCount>(2);
 		TrackerApp ob1=new TrackerApp();
 		TrackerApp ob2=new TrackerApp();
 		sco.addObserver(ob1);
@@ -55,7 +55,7 @@ class StepCounterTest {
 	
 	@Test
 	public void notifyObserversTest() {
-		StepCounter sco=new StepCounter(2);
+		StepCounter<StepCount> sco=new StepCounter<StepCount>(2);
 		TrackerApp ob1=new TrackerApp();
 		TrackerApp ob2=new TrackerApp();
 		sco.addObserver(ob1);
