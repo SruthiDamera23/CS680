@@ -8,7 +8,7 @@ import edu.umb.cs680.hw09.Link;
 
 public class FileCrawlingVisitor implements FSVisitor{
 	
-	LinkedList<File> files=new LinkedList();
+	LinkedList<File> files=new LinkedList<>();
 
 	@Override
 	public void visit(Link link) {
