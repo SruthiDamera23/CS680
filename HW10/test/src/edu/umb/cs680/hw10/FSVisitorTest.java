@@ -4,14 +4,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import edu.umb.cs680.hw10.Directory;
-import edu.umb.cs680.hw10.FileSystem;
-import edu.umb.cs680.hw10.TestFixtureInitializer;
 import edu.umb.cs680.hw10.fs.util.CountingVisitor;
 import edu.umb.cs680.hw10.fs.util.FileCrawlingVisitor;
 import edu.umb.cs680.hw10.fs.util.FileSearchVisitor;
-import edu.umb.cs680.hw10.fs.util.*;
+
 
 class FSVisitorTest {
 	

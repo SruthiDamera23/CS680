@@ -9,7 +9,7 @@ import edu.umb.cs680.hw10.Link;
 public class FileSearchVisitor implements FSVisitor{
 	
 	String fileName;
-	LinkedList<File> foundFiles=new LinkedList();
+	LinkedList<File> foundFiles=new LinkedList<>();
 	
 	public FileSearchVisitor(String fileName){
 		this.fileName=fileName;
